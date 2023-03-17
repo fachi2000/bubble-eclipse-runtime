@@ -1,0 +1,8 @@
+recipe matcha_bubble_tea {
+    ingredient matcha quantity 2.5
+    ingredient milk quantity 1.0
+    ingredient sugar quantity 1.5
+    topping boba quantity 0.5
+    brew tea green_tea
+    serve large
+  }
