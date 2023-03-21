@@ -1,0 +1,33 @@
+Program contains:
+
+1 recipes.
+
+Ingredients:
+- matcha: 2.5
+- milk: 1.0
+- sweetener: 1.5
+
+Toppings:
+- boba: 0.5
+
+Brewing:
+- Tea: green_tea
+- Ice: 100
+- Sugar: 50
+
+Recipes:
+Recipe: matcha_bubble_tea
+  Ingredients:
+  - matcha: 2.5
+  - milk: 1.0
+  - sweetener: 1.5
+  Toppings:
+  - boba: 0.5
+  Brewing:
+  - Tea: green_tea
+  - Ice: 100
+  - Sugar: 50
+  Serving:
+  - Size: large
+  Pearls:
+  - Included
