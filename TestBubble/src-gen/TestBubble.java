@@ -1,4 +1,8 @@
-import java.util.List;
+import javax.swing.JDialog;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.Dimension;
+import java.awt.Font;
 
 public class TestBubble {
     public static void main(String[] args) {
@@ -6,21 +10,37 @@ public class TestBubble {
     }
 
     public static void printRecipes() {
-        System.out.println("Recipe: matcha_bubble_tea");
-        System.out.println("  Ingredients:");
-        System.out.println("    - matcha: 2.5");
-        System.out.println("    - milk: 1.0");
-        System.out.println("    - sweetener: 1.5");
-        System.out.println("  Toppings:");
-        System.out.println("    - boba: 0.5");
-        System.out.println("  Brewing:");
-        System.out.println("    - Tea: green_tea");
-        System.out.println("    - Ice: 100");
-        System.out.println("    - Sugar: 50");
-        System.out.println("  Serving:");
-        System.out.println("    - Size: large");
-        System.out.println("  Pearls:");
-        System.out.println("    - Included");
-        System.out.println();
+        StringBuilder sb = new StringBuilder();
+        sb.append("Recipe: matcha_bubble_tea\n");
+        sb.append("  Ingredients:\n");
+        sb.append("    - matcha: 2.5\n");
+        sb.append("    - milk: 1.0\n");
+        sb.append("    - sweetener: 1.5\n");
+        sb.append("  Toppings:\n");
+        sb.append("    - boba: 0.5\n");
+        sb.append("  Brewing:\n");
+        sb.append("    - Tea: green_tea\n");
+        sb.append("    - Ice: 100\n");
+        sb.append("    - Sugar: 50\n");
+        sb.append("  Serving:\n");
+        sb.append("    - Size: large\n");
+        sb.append("  Pearls:\n");
+        sb.append("    - Included\n");
+        sb.append("\n");
+
+        JTextArea textArea = new JTextArea(sb.toString());
+        textArea.setEditable(false);
+        textArea.setFont(new Font("monospaced", Font.PLAIN, 12));
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setPreferredSize(new Dimension(400, 300));
+
+        JDialog dialog = new JDialog();
+        dialog.setTitle("Bubble Tea Recipes");
+        dialog.setModal(true);
+        dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+        dialog.setContentPane(scrollPane);
+        dialog.pack();
+        dialog.setLocationRelativeTo(null);
+        dialog.setVisible(true);
     }
 }
