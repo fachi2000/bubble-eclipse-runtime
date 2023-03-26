@@ -1,6 +1,7 @@
 /.metadata/
 *.class
-/.classpath
+.classpath
+.project
 src-gen
 *.jar
 bin
