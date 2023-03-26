@@ -8,14 +8,13 @@ public class TestBubble {
     public static void main(String[] args) {
         printRecipes();
     }
-
+		
     public static void printRecipes() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Recipe: matcha_bubble_tea\n");
+        sb.append("Order #1: matcha_bubble_tea\n");
         sb.append("  Ingredients:\n");
         sb.append("    - matcha: 2.5\n");
         sb.append("    - milk: 1.0\n");
-        sb.append("    - sweetener: 1.5\n");
         sb.append("  Toppings:\n");
         sb.append("    - boba: 0.5\n");
         sb.append("  Brewing:\n");
@@ -30,9 +29,9 @@ public class TestBubble {
 
         JTextArea textArea = new JTextArea(sb.toString());
         textArea.setEditable(false);
-        textArea.setFont(new Font("monospaced", Font.PLAIN, 12));
+        textArea.setFont(new Font("monospaced", Font.BOLD, 14));
         JScrollPane scrollPane = new JScrollPane(textArea);
-        scrollPane.setPreferredSize(new Dimension(400, 300));
+        scrollPane.setPreferredSize(new Dimension(400, 310));
 
         JDialog dialog = new JDialog();
         dialog.setTitle("Bubble Tea Recipes");

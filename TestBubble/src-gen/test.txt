@@ -5,7 +5,6 @@ Program contains:
 Ingredients:
 - matcha: 2.5
 - milk: 1.0
-- sweetener: 1.5
 
 Toppings:
 - boba: 0.5
@@ -20,7 +19,6 @@ Recipe: matcha_bubble_tea
   Ingredients:
   - matcha: 2.5
   - milk: 1.0
-  - sweetener: 1.5
   Toppings:
   - boba: 0.5
   Brewing:
