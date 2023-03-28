@@ -5,6 +5,7 @@ Bundle-SymbolicName: org.xtext.group3.bubble.xpect
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.xtext.group3.bubble;bundle-version="1.0.0",
  org.xtext.group3.bubble.ui;bundle-version="1.0.0",
- org.eclipse.xpect.xtext.lib;bundle-version="0.2.0"
+ org.eclipse.xpect.xtext.lib;bundle-version="0.2.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.29.0"
 Automatic-Module-Name: org.xtext.group3.bubble.xpect
 Bundle-RequiredExecutionEnvironment: JavaSE-17

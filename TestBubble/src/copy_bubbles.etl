@@ -1,0 +1,73 @@
+@nsURI bubble="http://www.xtext.org/group3/bubble/Bubble"
+
+@sourceModel name="Source" nsuri="bubble"
+@targetModel name="Target" nsuri="bubble"
+
+rule CopyModel
+transform s : Source!Model
+to t : Target!Model {
+  t.recipes ::= s.recipes;
+}
+
+rule CopyRecipe
+transform s : Source!Recipe
+to t : Target!Recipe {
+  t.name = s.name;
+  t.ingredients ::= s.ingredients;
+  t.toppings ::= s.toppings;
+  t.brewing = s.brewing;
+  t.serving = s.serving;
+  t.pearls = s.pearls;
+}
+
+rule CopyIngredient
+transform s : Source!Ingredient
+to t : Target!Ingredient {
+  t.name = s.name;
+  t.quantity = s.quantity;
+}
+
+rule CopyTopping
+transform s : Source!Topping
+to t : Target!Topping {
+  t.name = s.name;
+  t.quantity = s.quantity;
+}
+
+rule CopyBrewing
+transform s : Source!Brewing
+to t : Target!Brewing {
+  t.tea = s.tea.equivalent();
+  t.ice = s.ice;
+  t.sugar = s.sugar;
+}
+
+rule CopyTea
+transform s : Source!Tea
+to t : Target!Tea {
+  t.name = s.name;
+}
+
+rule CopyServing
+transform s : Source!Serving
+to t : Target!Serving {
+  t.size = s.size;
+}
+
+rule CopyPearls
+transform s : Source!Pearls
+to t : Target!Pearls {
+  t.pearls = s.pearls;
+}
+
+rule CopyIngredientRef
+transform s : Source!IngredientRef
+to t : Target!IngredientRef {
+  t.ingredient = s.ingredient;
+}
+
+rule CopyRecipeRef
+transform s : Source!RecipeRef
+to t : Target!RecipeRef {
+  t.recipe = s.recipe;
+}
