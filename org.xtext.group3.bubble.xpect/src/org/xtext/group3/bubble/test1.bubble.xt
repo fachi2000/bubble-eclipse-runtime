@@ -85,7 +85,7 @@ public class TestBubble {
 ---
 */
 
-/*XPECT warnings --> 'The amount of ice should be either 0, 30, 50, 70 or 100 */
+/*XPECT warnings --> 'The amount of ice should be either 0, 30, 50, 70 or 100' */
 recipe matcha_bubble_tea {
 ingredient matcha amount 2.5
 ingredient milk amount 1.0
@@ -95,7 +95,7 @@ serve large
 pearls true
 }
 
-/*XPECT warnings --> 'The amount of sugar should be either 0, 30, 50, 70 or 100 */
+/*XPECT warnings --> 'The amount of sugar should be either 0, 30, 50, 70 or 100' */
 recipe matcha_bubble_tea {
 ingredient matcha amount 2.5
 ingredient milk amount 1.0
