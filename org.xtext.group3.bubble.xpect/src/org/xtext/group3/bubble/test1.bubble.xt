@@ -1,6 +1,6 @@
 //XPECT_SETUP org.xtext.group3.bubble.XPectTests END_SETUP
 
-/*XPECT generated file test1.bubbble.xt.txt ---
+/*XPECT generated file test.xt.txt ---
 Program contains:
 
 1 recipes.
@@ -36,7 +36,7 @@ Recipe: matcha_bubble_tea
 ---
 */
 
-/*XPECT generated TestBubble.java ---
+/*XPECT generated file TestBubble.java ---
 import javax.swing.JDialog;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;

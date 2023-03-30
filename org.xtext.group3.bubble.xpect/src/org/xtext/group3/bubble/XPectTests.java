@@ -9,7 +9,6 @@ import org.eclipse.xpect.xtext.lib.tests.ResourceDescriptionTest;
 import org.eclipse.xpect.xtext.lib.tests.ScopingTest;
 import org.eclipse.xpect.xtext.lib.tests.ValidationTest;
 import org.eclipse.xpect.xtext.lib.tests.XtextTests;
-
 import org.junit.runner.RunWith;
 
 @XpectSuiteClasses({ JvmModelInferrerTest.class,
