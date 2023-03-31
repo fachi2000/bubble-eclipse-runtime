@@ -20,6 +20,6 @@ import org.junit.runner.RunWith;
 })
 
 @RunWith(XpectRunner.class)
-public class XPectTests extends XtextTests {
+public class XPectTests extends GeneratorTest {
 	
 }
